@@ -1,0 +1,18 @@
+$colors: (
+  pink: #FFE6EB,
+  light: #DEFCFC,
+  medium: #CBF1F5,
+  dark: #A6E3E9,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+html{
+  //-webkit-clip-path: polygon(100% 0, 100% 68%, 82% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 68%, 82% 100%, 0 100%, 0 0);
+  background-color: color(medium);
+  //background: linear-gradient(to bottom, #defcfc, #d0f6f7, #c2f0f2, #b4e9ed, #a6e3e9);
+  //background-repeat: no-repeat;
+}
