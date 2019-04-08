@@ -2,8 +2,27 @@ html {
   clip-path: polygon(100% 0, 100% 68%, 82% 100%, 0 100%, 0 0);
   background-color: #CBF1F5; }
 
+header {
+  text-align: center; }
+
 #title {
+  display: inline-block;
   max-width: 100%;
   height: auto; }
+
+#title h1 {
+  font-size: 50px; }
+
+#title-image {
+  width: 100px;
+  height: auto; }
+
+img {
+  margin-top: 40px;
+  width: 75px;
+  height: 75px; }
+
+#plus {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

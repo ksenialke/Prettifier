@@ -16,12 +16,28 @@ html{
   //background: linear-gradient(to bottom, #defcfc, #d0f6f7, #c2f0f2, #b4e9ed, #a6e3e9);
   //background-repeat: no-repeat;
 }
+header{
+  text-align: center;
+}
 #title{
   //justify-content: center;
+  display: inline-block;
   max-width: 100%;
   height: auto;
+
 }
-
+#title h1{
+  font-size: 50px;
+}
 #title-image{
-
+  width: 100px;
+  height: auto;
+}
+img{
+  margin-top:40px;
+  width: 75px;
+  height: 75px;
+}
+#plus{
+  text-align: center;
 }
