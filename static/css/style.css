@@ -2,4 +2,8 @@ html {
   clip-path: polygon(100% 0, 100% 68%, 82% 100%, 0 100%, 0 0);
   background-color: #CBF1F5; }
 
+#title {
+  max-width: 100%;
+  height: auto; }
+
 /*# sourceMappingURL=style.css.map */
