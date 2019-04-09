@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Dokdo|Pacifico");
 html {
-  clip-path: polygon(100% 0, 100% 68%, 82% 100%, 0 100%, 0 0);
-  background-color: #CBF1F5; }
+  background-color: #ffd7e8; }
 
 header {
   text-align: center; }
@@ -11,18 +11,182 @@ header {
   height: auto; }
 
 #title h1 {
-  font-size: 50px; }
+  font-family: 'Pacifico', cursive;
+  font-size: 100px;
+  font-weight: lighter;
+  color: #866ec7; }
 
 #title-image {
-  width: 100px;
-  height: auto; }
-
-img {
-  margin-top: 40px;
   width: 75px;
   height: 75px; }
 
-#plus {
-  text-align: center; }
+.text {
+  color: #866ec7;
+  font-family: 'Pacifico', cursive;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.overlayFade {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffd7e8; }
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: all .3s ease; }
+
+.container:hover .overlay, .container:hover .overlayFade {
+  opacity: 1;
+  cursor: pointer; }
+
+.hvr-grow {
+  text-align: center;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform; }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.15); }
+
+/* Wobble To Bottom Right */
+@-webkit-keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px); }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px); }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+.hvr-wobble-to-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-wobble-to-bottom-right:hover, .hvr-wobble-to-bottom-right:focus, .hvr-wobble-to-bottom-right:active {
+  -webkit-animation-name: hvr-wobble-to-bottom-right;
+  animation-name: hvr-wobble-to-bottom-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+/* Wobble To Top Right */
+@-webkit-keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px); }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px); }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+.hvr-wobble-to-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-wobble-to-top-right:hover, .hvr-wobble-to-top-right:focus, .hvr-wobble-to-top-right:active {
+  -webkit-animation-name: hvr-wobble-to-top-right;
+  animation-name: hvr-wobble-to-top-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+.hvr-float {
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px); }
 
 /*# sourceMappingURL=style.css.map */
