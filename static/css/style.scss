@@ -6,6 +6,10 @@ $colors: (
   dark: #866ec7,
 );
 
+$icon-size: 80px;
+$font-stack: 'Pacifico', cursive;
+$small-title: 20px;
+
 @function color($color-name) {
   @return map-get($colors, $color-name)
 }
@@ -23,11 +27,12 @@ header{
   height: auto;
 
 }
-#title h1{
-  font-family: 'Pacifico', cursive;
+h1{
+  font-family: $font-stack;
   font-size: 100px;
   font-weight: lighter;
   color: color(dark);
+  text-align: center;
 }
 #title-image{
   //width: 100px;
@@ -242,4 +247,81 @@ header{
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
+}
+
+
+
+/*Upload*/
+.title h2{
+  font-size: $small-title;
+  font-family: $font-stack;
+  color: color(dark);
+  text-align: right;
+  margin:0;
+}
+
+//popraw
+a{
+  style: none;
+}
+
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: color(light);
+  background-color: color(dark);
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 20px 8px 20px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  color: color(medium);
+}
+
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.js .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.edits .edit img{
+  margin: 10px;
+  width: $icon-size;
+  height: $icon-size;
+}
+
+
+.filters .filter img{
+  margin: 10px;
+  width: $icon-size;
+  height: $icon-size;
 }

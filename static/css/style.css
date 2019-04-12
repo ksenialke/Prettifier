@@ -10,11 +10,12 @@ header {
   max-width: 100%;
   height: auto; }
 
-#title h1 {
-  font-family: 'Pacifico', cursive;
+h1 {
+  font-family: "Pacifico", cursive;
   font-size: 100px;
   font-weight: lighter;
-  color: #866ec7; }
+  color: #866ec7;
+  text-align: center; }
 
 #title-image {
   width: 75px;
@@ -188,5 +189,68 @@ header {
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px); }
+
+/*Upload*/
+.title h2 {
+  font-size: 20px;
+  font-family: "Pacifico", cursive;
+  color: #866ec7;
+  text-align: right;
+  margin: 0; }
+
+a {
+  style: none; }
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px; }
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #f2c0ff;
+  background-color: #866ec7;
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 20px 8px 20px; }
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  color: #bf9fee; }
+
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px; }
+
+.js .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.edits .edit img {
+  margin: 10px;
+  width: 80px;
+  height: 80px; }
+
+.filters .filter img {
+  margin: 10px;
+  width: 80px;
+  height: 80px; }
 
 /*# sourceMappingURL=style.css.map */

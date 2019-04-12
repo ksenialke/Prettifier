@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Upload a file</title>
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<input type="file" />
 
+<div class="title">
+    <h2><a href="/">Prettifier</a></h2>
+</div>
+
+<hr>
+
+<div id="choose-file">
+    <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected"/>
+    <label for="file" id="labelfile">Choose a file</label>
+</div>
+
+<div class="edits">
+    <div class="edit" id="turn-left">
+        <img src="/image/edits/left-arrow.png">
+        <p>Turn Left</p>
+    </div>
+</div>
+
+<div class="photo"></div>
+
+<div class="filters">
+    <div class="filter" id="black-and-white">
+        <img src="/image/filters/bw.png">
+        <p>Black & White</p>
+    </div>
+    <div class="filter" id="">
+
+    </div>
+    <div class="filter" id="">
+
+    </div>
+</div>
 
 <script type="text/javascript" src="/js/first.js"></script>
-
 </body>
 </html>
