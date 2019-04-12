@@ -9,6 +9,8 @@ input.addEventListener('change', function (e) {
         img.onload = function () {
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d');
+            canvas.width = img.width;
+            canvas.height = img.height;
             context.drawImage(img, 0, 0);
 
             const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
